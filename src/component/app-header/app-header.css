@@ -7,7 +7,9 @@
   .app-header h1 {
     /* width: 150px;
     height: 150px; */
-    font-size: 26px;
+    font-size: 28px;
+    color: rgb(2, 2, 116);
+    text-transform: uppercase;
   }
   
   .app-header h2 {
