@@ -23,6 +23,7 @@ export default class App extends Component{
 
         this.maxId = 4
     }
+    
     componentDidMount() {
         const localData =JSON.parse(localStorage.getItem('data'))
         if (localData) {
@@ -48,7 +49,7 @@ export default class App extends Component{
         const newItem = {
             lebel: body,
             important: false,
-            id: this.maxId++
+            id: Math.random()
         }
         this.setState(({data}) => {
             const newArr = [...data, newItem]
@@ -57,9 +58,11 @@ export default class App extends Component{
             }
         })
     }
+    
 
     onToggleLike = (id) => {
         this.setState(({data}) => {
+            console.log(id);
             const index = data.findIndex(elem => elem.id === id);
             const old = data[index];
             const newItem = {...old, like: !old.like} ;

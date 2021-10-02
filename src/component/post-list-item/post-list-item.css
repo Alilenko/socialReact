@@ -1,5 +1,6 @@
 .app-list-item {
     font-size: 1.25rem;
+
   }
   
   .app-list-item button {
@@ -10,6 +11,7 @@
     border: none;
     cursor: pointer;
   }
+
   .app-list-item button:focus {
       box-shadow: none;
       outline: none;
@@ -38,6 +40,8 @@
     cursor: pointer;
     user-select: none;
     transition: 0.5s all;
+    max-width: 65%;
+    word-wrap: break-word;
   }
   
   .app-list-item.like .fa-heart {

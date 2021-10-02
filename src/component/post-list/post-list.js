@@ -5,6 +5,7 @@ import './post-list.css';
 
 const PostList = ({data, onDelete, onToggleLike, onToggleImportant}) => {
 
+ 
     const elements = data.map((item) => {
         return(
             <li key={item.id} className='list-group-item'>
@@ -16,11 +17,13 @@ const PostList = ({data, onDelete, onToggleLike, onToggleImportant}) => {
             </li>
         )
     })
+
     return (
         <ul className = "app-list list-group">
             {elements}
         </ul>
     )
 }
+
 
 export default PostList;
