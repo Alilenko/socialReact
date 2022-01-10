@@ -17,7 +17,7 @@ const PostList = ({data, onDelete, onToggleLike, onToggleImportant}) => {
             </li>
         )
     })
-    console.log('git test');
+    console.log('git test test test test');
 
     return (
         <ul className = "app-list list-group">
