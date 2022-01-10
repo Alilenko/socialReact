@@ -17,7 +17,7 @@ const PostList = ({data, onDelete, onToggleLike, onToggleImportant}) => {
             </li>
         )
     })
-    console.log('add branch Alina!');
+    console.log('git test');
 
     return (
         <ul className = "app-list list-group">
