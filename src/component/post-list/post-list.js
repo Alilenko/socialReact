@@ -17,6 +17,7 @@ const PostList = ({data, onDelete, onToggleLike, onToggleImportant}) => {
             </li>
         )
     })
+    console.log('add branch Alina');
 
     return (
         <ul className = "app-list list-group">
